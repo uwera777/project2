@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color:none;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: teal;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+navbar{
+    position: fixed;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    background-color: #555;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: black;
+}
+
+
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.people {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    margin-top: 50px;
+}
+
+.people h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.personinfo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;  /* Prevent wrapping to ensure all images stay on one line */
+    overflow-x: auto;  /* Allows horizontal scrolling if the screen is too small */
+    padding-bottom: 10px;
+     gap: 30px;
+}
+
+.info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 220px; /* Ensure uniform card size */
+    transition: transform 0.3s ease-in-out;
+}
+
+.info:hover {
+    transform: translateY(-5px);
+}
+
+.info img {
+    width: 100px;
+    max-width: 200px;
+    height:100px;
+   border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.info h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #222;
+}
+
+.info p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+}
+.footer {
+    background-color:teal;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+
+
